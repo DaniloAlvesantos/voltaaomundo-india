@@ -49,19 +49,19 @@ class Weather extends HTMLElement {
         src = !data.is_day
           ? path.join("") + "assets/moon.svg"
           : path.join("") + "assets/sun.svg";
-        infoCont.setAttribute("style", "--bg:#FFECB2;");
+        !data.is_day ? infoCont.setAttribute("style", "--bg:#333; --text:#ddd;") : infoCont.setAttribute("style", "--bg:#FFECB2; --text:#C8A846;");
         break;
       case "clound":
         src = path.join("") + "assets/cloudy.svg";
-        infoCont.setAttribute("style", "--bg:#D9E6EB;");
+        infoCont.setAttribute("style", "--bg:#D9E6EB; --text:#ABBABF;");
         break;
       case "light-rain":
         src = path.join("") + "assets/light-rain.svg";
-        infoCont.setAttribute("style", "--bg:#C7EEFF;");
+        infoCont.setAttribute("style", "--bg:#C7EEFF; --text-:#91BFDB;");
         break;
       case "rain":
         src = path.join("") + "assets/cloud-rain.svg";
-        infoCont.setAttribute("style", "--bg:#3F6993;");
+        infoCont.setAttribute("style", "--bg:#3F6993; --text:#5EADCD;");
         break;
       default:
         console.log("Valor do icone desconhecido");
@@ -76,8 +76,8 @@ class Weather extends HTMLElement {
     hour.innerHTML = `${data.hour}`;
 
     infoCont.appendChild(icon);
-    infoCont.appendChild(info);
     infoCont.appendChild(degree);
+    infoCont.appendChild(info);
     textCont.appendChild(wind);
     textCont.appendChild(humidity);
     textCont.appendChild(hour);
@@ -191,8 +191,9 @@ class Weather extends HTMLElement {
         .weather-info-container {
           text-align:right;
           background:var(--bg);
-          padding:1rem;
+          padding:2rem 1rem;
           border-radius:12px 12px 0 0;
+          color:var(--text);
         }
         .weather-info {
           font-family:"Funnel Sans", sans-serif;

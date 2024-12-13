@@ -150,7 +150,12 @@ class Hero extends HTMLElement {
             color:#fff;
             z-index:10;
             letter-spacing:.5rem;
-            font-size:2.8rem;
+            font-size:1.8rem;
+        }
+        @media(min-width: 640px) {
+          .hero-title {
+            font-size:2.8rem;        
+          }
         }
     `;
 
