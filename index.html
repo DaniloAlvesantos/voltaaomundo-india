@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app/styles/global.css" />
+    <link rel="stylesheet" href="./app/styles/page.css" />
+    <script src="./app/components/footer.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+    <title>Volta ao mundo | Índia</title>
+  </head>
+  <body>
+    <hero-comp data-text="Taj Mahal" data-image="./app/assets/tajmahal.jpg"></hero-comp>
+    <nav>
+      <div class="swiper mySwiper" style="padding: 1rem">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="./app/pages/gastronomia.html">
+              <card-comp
+                data-title="GASTRONOMIA"
+                data-image="./app/assets/indian-food.png"
+              ></card-comp>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="./app/pages/turismo.html">
+              <card-comp
+                data-title="TURISMO"
+                data-image="./app/assets/turismo.webp"
+              ></card-comp>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="./app/pages/cultura.html">
+              <card-comp
+                data-title="CULTURA"
+                data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjHwGYP3iiMrd50yuI7mOmVtTEuih05QLNFg&s"
+              ></card-comp>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="./app/pages/historia.html">
+              <card-comp
+                data-title="HISTÓRIA"
+                data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmD-r7JSeK-hvrt5nGp_fJWxq8F2n7abMo8A&s"
+              ></card-comp>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </nav>
+
+    <section>
+      <h2>Sobre</h2>
+      <p>
+        A Índia, uma nação milenar e vibrante, é um país que encanta os sentidos
+        com sua rica história, diversidade cultural e paisagens deslumbrantes.
+        Um mosaico de culturas, religiões e tradições, a Índia oferece uma
+        experiência única para aqueles que buscam conhecer um dos berços da
+        civilização humana.
+      </p>
+      <p>
+        Com uma história que remonta a mais de 5.000 anos, a Índia possui um
+        patrimônio cultural riquíssimo, com monumentos históricos, templos
+        antigos e cidades vibrantes. O Taj Mahal, uma das Sete Maravilhas do
+        Mundo Moderno, é apenas um exemplo da beleza arquitetônica e da riqueza
+        cultural do país.
+      </p>
+      <p>
+        A Índia é um país de contrastes, onde as montanhas nevadas do Himalaia
+        se encontram com as praias ensolaradas do Oceano Índico. Suas cidades
+        cosmopolitas, como Mumbai e Nova Delhi, coexistem com vilas tradicionais
+        e aldeias remotas, oferecendo uma variedade de experiências para os
+        visitantes.
+      </p>
+      <p>
+        A espiritualidade é um aspecto fundamental da cultura indiana, com
+        diversas religiões, como o hinduísmo, o budismo, o islamismo e o
+        siqueismo, coexistindo pacificamente. A prática da yoga e da meditação,
+        originárias da Índia, são cada vez mais populares em todo o mundo.
+      </p>
+      <p>
+        A culinária indiana é famosa por seus sabores intensos e variados, com
+        uma grande variedade de especiarias e ingredientes. O curry, o naan e o
+        chai são apenas alguns dos pratos mais conhecidos da culinária indiana,
+        que encanta paladares do mundo inteiro.
+      </p>
+      <p>
+        Em resumo, a Índia é um país que fascina e inspira, com sua rica
+        história, diversidade cultural, paisagens deslumbrantes e
+        espiritualidade profunda. Se você busca uma experiência única e
+        inesquecível, a Índia é o destino perfeito para você.
+      </p>
+    </section>
+
+    <footer-comp></footer-comp>
+
+    <script src="./app/components/card.js"></script>
+    <script src="./app/components/hero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        freeMode: true,
+        breakpoints: {
+          500: {
+            slidesPerView: 1,
+            spaceBetween: -70,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: -200,
+          },
+          740: {
+            slidesPerView: 2,
+            spaceBetween: 60,
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: -60,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 160
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1600: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

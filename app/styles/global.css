@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --india-green: #046a38;
+  --india-orange: #ff671f;
+  --india-blue: #06038d;
+   /*  Media Query */
+   --sm: 640px;
+   --md: 768px;
+   --lg: 1024px;
+   --xl: 1280px;
+   --2xl: 1536px;
+   /* Font Sizes */
+   --xs-size: 0.75rem;
+   --sm-size: 0.875rem;
+   --base-size: 1rem;
+   --lg-size: 1.125rem;
+   --xl-size: 1.25rem;
+   --2xl-size: 1.5rem;
+   /* Line Heights */
+   --xs-height: 1rem;
+   --sm-height: 1.25rem;
+   --base-height: 1.5rem;
+   --lg-height: 1.75rem;
+   --xl-height: 1.75rem;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width:2000px) {
+  body {
+    padding: 0 20%;
+  }
+}

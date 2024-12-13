@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/page.css" />
+    <link rel="stylesheet" href="../styles/gastronomia.css" />
+    <script src="../components/footer.js"></script>
+    <title>Gastronomia | Índia</title>
+  </head>
+  <body>
+    <hero-comp
+      data-text="Gastro"
+      data-image="../assets/indian-food.png"
+      data-title="GASTRONOMIA"
+      data-link="../../index.html"
+    ></hero-comp>
+
+    <section>
+      <h2>Receitas</h2>
+      <p>
+        A culinária indiana é famosa por sua rica combinação de especiarias,
+        ingredientes frescos e técnicas tradicionais que resultam em pratos
+        aromáticos e saborosos. Cada região da Índia tem sua própria identidade
+        culinária, refletindo influências culturais, geográficas e históricas.
+      </p>
+      <p>
+        Os pratos indianos geralmente incluem uma base de grãos, como arroz ou
+        trigo, acompanhados por uma grande variedade de curries e molhos. Os
+        temperos são a alma da cozinha indiana, com combinações como cominho,
+        cardamomo, coentro, cúrcuma, gengibre e pimenta-do-reino, criando
+        sabores intensos e complexos.
+      </p>
+      <p>
+        As receitas vegetarianas são predominantes, especialmente no sul e no
+        oeste da Índia, com pratos como dhal (ensopado de lentilhas), samosas
+        (pastéis recheados) e saag paneer (queijo com espinafre). No entanto,
+        também há opções com carne, como o famoso biryani (arroz com especiarias
+        e carne) e o frango tikka masala.
+      </p>
+      <p>
+        Os pães indianos, como o naan e o roti, são um acompanhamento comum para
+        absorver os molhos e curries. Além disso, doces tradicionais, como gulab
+        jamun (bolinhas doces fritas em calda) e laddu (doces à base de farinha
+        e ghee), são muito apreciados.
+      </p>
+      <p>
+        A diversidade da culinária indiana é complementada por bebidas típicas,
+        como o chai (chá com especiarias e leite) e o lassi (bebida à base de
+        iogurte, doce ou salgado), que ajudam a equilibrar os sabores picantes
+        de muitos pratos.
+      </p>
+      <div class="img-container"></div>
+
+      <p>
+        A experiência culinária indiana vai além dos pratos principais e inclui
+        uma grande variedade de entradas e acompanhamentos. Os chutneys, feitos
+        de frutas, ervas ou especiarias, adicionam um toque agridoce ou picante
+        às refeições, enquanto os picles artesanais proporcionam uma explosão de
+        sabor com cada mordida.
+      </p>
+      <p>
+        Outro destaque da gastronomia indiana é o uso de métodos de cocção
+        tradicionais, como o tandoor, um forno de barro usado para assar pães e
+        carnes, conferindo um sabor defumado único. Essa técnica é essencial
+        para preparar iguarias como frango tandoori e naan.
+      </p>
+      <p>
+        Cada refeição indiana é uma celebração de cor, aroma e textura. Desde o
+        simples mas reconfortante arroz com curry até os elaborados banquetes
+        festivos, a comida indiana encanta tanto os amantes de sabores suaves
+        quanto aqueles que buscam pratos mais intensos e picantes.
+      </p>
+      <p>
+        Por fim, a culinária indiana reflete a conexão profunda entre comida e
+        cultura, sendo muitas vezes compartilhada em ocasiões festivas e rituais
+        religiosos. É uma expressão de hospitalidade e um convite para explorar
+        uma das tradições mais vibrantes do mundo.
+      </p>
+    </section>
+
+    <main>
+      <h3>Veja as principais receitas</h3>
+      <div class="cards">
+        <recipe-card
+          data-title="SAMOSAS"
+          data-image="https://media.post.rvohealth.io/wp-content/uploads/2020/07/thali-indian-732x549-thumbnail.jpg"
+          data-description="Fried or baked pastry packets filled with spiced potatoes, peas, or meat."
+          data-bg-color="#fdf0e6"
+          data-title-color="#FF9757"
+          data-button-color="var(--india-orange)"
+          data-button-hover="#b33900"
+          data-border="var(--india-orange)"
+        >
+        </recipe-card>
+      </div>
+    </main>
+
+    <footer-comp></footer-comp>
+
+    <script src="../components/hero.js"></script>
+    <script src="../components/receipeCard.js"></script>
+    <script src="../components/main.js"></script>
+    <script>
+      window.addEventListener(
+        "DOMContentLoaded",
+        setImage(
+          "https://media.post.rvohealth.io/wp-content/uploads/2020/07/thali-indian-732x549-thumbnail.jpg"
+        )
+      );
+    </script>
+  </body>
+</html>
