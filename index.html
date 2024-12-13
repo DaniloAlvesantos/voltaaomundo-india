@@ -121,9 +121,13 @@
     <script>
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 45,
         freeMode: true,
         breakpoints: {
+          400: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
           500: {
             slidesPerView: 1,
             spaceBetween: -70,
@@ -150,7 +154,7 @@
           },
           1600: {
             slidesPerView: 4,
-            spaceBetween: 10,
+            spaceBetween: 340,
           },
         },
       });
